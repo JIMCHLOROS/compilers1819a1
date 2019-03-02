@@ -66,7 +66,7 @@ def scan(text,transitions,accepts):
 transitions = { 'q0': { 'DIGIT_0':'q1' , 'DIGIT_1-2':'q1','DIGIT_3':'q2' },
        		'q1': { 'DIGIT_0':'q4','DIGIT_1-2':'q4','DIGIT_3':'q4','DIGIT_4':'q4','DIGIT_5':'q4','DIGIT_6-9':'q4' },
        		'q2': { 'DIGIT_0':'q3','DIGIT_1-2':'q3','DIGIT_3':'q3','DIGIT_4':'q3','DIGIT_5':'q4' },
-	        'q3': { 'DIGIT_0':'q5','DIGIT_1-2':'q5','DIGIT_3':'q5','DIGIT_4':'q5','DIGIT_5':'q5','DIGIT_6-9':'q5' },
+	        'q3': { 'DIGIT_0':'q5'},
 	        'q4': { 'DIGIT_0':'q5'},
 	        'q5': { 'DIGIT_0':'q6','DIGIT_1-2':'q6','DIGIT_3':'q6','DIGIT_4':'q6','DIGIT_5':'q6','DIGIT_6-9':'q6' },
 	        'q6': { 'DIGIT_0':'q7','DIGIT_1-2':'q7','DIGIT_3':'q7','DIGIT_4':'q7','DIGIT_5':'q7','DIGIT_6-9':'q7'  },
